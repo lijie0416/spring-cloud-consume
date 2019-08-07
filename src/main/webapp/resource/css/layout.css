@@ -1,0 +1,251 @@
+/*
+layout.css
+*/
+
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #333;
+  font: 12px "sans-serif", "Arial", "Verdana";
+  background-color:#FFFFFF;
+}
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+input, textarea, select {
+  font: 12px "sans-serif", "Arial", "Verdana";
+}
+ul{ list-style:none; margin:0; padding:0;}
+/*link*/
+
+a.yellow:visited,a.yellow:link {
+  color: #FE6601;
+  text-decoration: none;
+}
+
+.whiteL a:visited,.whiteL a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.whiteL a:hover,.whiteL a:active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.blueL a:visited,.blueL a:link {
+  color: #0263B0;
+}
+.blueL a:hover,.blueL a:active {
+  color: #FF3300;
+  text-decoration: underline;
+}
+a.redL:visited,a.redL:link {
+  color: #DB4802;
+  text-decoration: none;
+}
+a.redL:hover,a.redL:active {
+  color: #FF3300;
+  text-decoration: underline;
+}
+
+.clear {
+  clear: both;
+  float: none;
+  font-size: 0px;
+  margin: 0;
+  padding: 0;
+  display:block;
+}
+.nowrap {
+  white-space:nowrap;
+}
+.red{ color:#FF0000; padding-right:5px;}
+.b{ font-weight:bold;}
+.none{ display:none}
+.text_center{ text-align:center}	
+.mt10{ margin-top:10px;}
+/*ad-----------------------------------*/
+.ad{ width:100%; margin-top:10px;}
+.ad ul.list6 li{ float:left; margin-left:12px; text-align:center; display:inline; line-height:24px;}
+.ad ul.list6 li img{ width:150px; height:50px;}
+.ad ul.list6 li.first{ margin-left:0;}
+
+.ad3 li{ float:left; padding:8px 0 10px 10px; margin:0;}	 
+
+.ad3-l{ float:right; width:195px; overflow:hidden; margin:10px 3px 0 0; display:inline;}
+.ad3-l li{ float:left; padding-bottom:10px}
+.ad4 li{ float:left; width:25%; text-align:center}
+.ad4_width166 li{ float:left; width:166px; text-align:center}
+
+
+
+.grid-1{ float:left; width:640px;}
+.grid-2{ float:right; width:310px;}
+.boxLine{ background:#fff; padding:1px; border:1px solid #e0e0e0;}
+.boxLineT0{ background:#fff; padding:1px; border:1px solid #e0e0e0; border-top:0;}
+.box-yellow{ background:#fff; padding:1px; border:1px solid #FBD686;}
+
+.boxtj{ background:#fff; border:1px solid #46ACF6; padding:1px 0px;}
+
+
+#left{ float:left; width:310px;}
+#right{ float:right; width:680px;}
+
+/* all button---------------------------*/
+.search_button{ background:url(../images/sbtn.gif) no-repeat; width:82px; height:24px; line-height:22px; text-align:center; font-size:14px; font-weight:bold; color:#974202; border:0; margin-left:3px;}
+.search_input{ width:425px; height:18px; padding:2px; line-height:18px; background:#fff; border-left:1px solid #5A5A58; border-top:1px solid #5A5A58; border-right:1px solid #B3B3B5; border-bottom:1px solid #B3B3B5; margin:0 0 0 3px;}
+
+.input{ border-left:1px solid #808080; border-top:1px solid #808080; border-right:1px solid #D4D0C7; border-bottom:1px solid #D4D0C7; height:17px;}
+
+/*background----------------------*/
+.moreButton,.moreButton span,.showTitleBar,.redTitleBar,.softBooks,.questionBox,.jt-left,.jt-right{ overflow:hidden;}
+.titleBar01,.titleBar01 h3,.titleBar,.titleBar h3,.titleBar ul,.newinfo,.cpTitleBar,.yTitleBar{ overflow:hidden;}
+
+
+/*layout css*/
+#header,#main,#footer,#link,#top{ width:960px; margin:0 auto;}
+#top a:visited,#top a:link{ text-decoration:none}
+
+
+#top100{ width:100%; height:26px;  background:#fff url(../images/topbg.gif) repeat-x bottom; border-bottom:1px solid #EAEAEA; color:#666;}
+#top .top_left{ float:left; width:auto; height:26px; line-height:26px;}
+#top .top_left li.home{background:url(../images/arrow.gif) no-repeat 5px -50px; padding-left:22px;}
+.top_left li {float: left; padding: 0 5px; margin: 0 5px; position: relative;}
+.top_left li a {color:#000000;}
+.top_left .topqxt {background-image:url(../images/topbg.jpg); float: left; padding: 0 5px 0 8px; margin: 0 5px; position: relative; letter-spacing:4px;}
+#top .top_right{ float:right; width:auto; height:26px; line-height:26px;}
+.top_right li{float:left;}
+.top_menu a.arrow{ background:url(../images/arrow.gif) no-repeat right -25px; display:block; padding-right:15px;}
+
+.top_menu ul{ position:absolute; z-index:99; padding-right:10px; background:#FFF; border:1px solid #EDEDED; border-top:0; display:none;}
+.top_menu ul a{ width:87px; white-space:nowrap; background:url(../images/dian.gif) no-repeat 2px center; padding-left:7px;}
+.secondary-menu{ left:-1px; top:22px; width:87px;}
+.secondary-menu1{ left:-1px; top:22px; width:200px;}
+.secondary-menu li,.secondary-menu1 li{ width:60px;line-height:21px;}
+
+
+
+
+#link{ border:1px solid #E1E6EA; margin-top:10px; background:#fff url(../images/link-img.gif) no-repeat 5px center; padding:10px 0;}
+#link .img{ float:left; height:95px; width:65px}
+#link ul {float:left; width:870px;}
+#link ul li{ clear:both; padding:5px 0;}
+#link ul li a{float:left;white-space:nowrap}
+#link ul li img{ border:0;}
+
+/*------ײʽ--------*/
+#footer{ width:100%;height:58px; text-align:center;clear:both;}
+#footer p{ line-height:23px; text-align:center; padding-top:10px;}
+
+
+/*logo*/
+#logo{ float:left; margin:10px 0 15px 0; padding:0 15px 0 6px; line-height:22px;}
+#logo_button{ float:right; width:430px; margin-top:16px;}
+#logo_button li{ float:left; background-position:-40px top; padding-left:19px; width:60px; white-space:nowrap; margin:0 5px 6px 0; display:inline; line-height:26px; height:26px; overflow:hidden;}
+#logo_button span{ clear:left; display:block; text-align:right; color:#F27121; padding-right:15px;}
+.logo_ad{ float:left; margin-top:10px;}
+
+
+/*search-box*/
+.search_box{ float:left; padding:10px 0 0 40px; width:900px; height:32px; overflow:hidden; font-size:14px; color:#666;}
+.search_box img,.search_box input,.search_box select{ vertical-align:middle}
+.search_box select{ height:24px; line-height:24px; font-size:14px; color:#666}
+.search_box a:link,.search_box a:visited{
+     color:#666;
+	 }
+.video_img{ float:right; padding:10px 20px 0 0;}
+
+.hot_search{ float:left; width:600px; padding-left:146px; color:#444;}
+.hot_search b{ font-weight:normal}
+.hot_search a{ margin-left:6px;}
+.hot_search a:link,.hot_search a:visited{
+     color:#444;
+	 text-decoration: underline;
+	 }
+.hot_search a:hover,.hot_search a:active {
+  color: #FF3300;
+  text-decoration: underline;
+}
+
+
+
+
+
+/*titleBar*/
+.moreButton{ float:right; background-position:right -582px; height:22px; padding-right:10px; margin:3px 6px 0 0; display:inline;}
+.moreButton span{ float:left; background-position:-799px -560px; height:22px; line-height:22px; padding-left:25px; color:#888; font-family:""}
+
+
+.titleBar01{ background-position:right -221px; width:100%; height:26px; margin-top:10px;}
+.titleBar01 h3{ float:left; background-position:left -221px; padding:0 0 0 15px; font-size:13px;font-weight:bold;color:#D60000; line-height:26px; height:26px; margin:0;}
+.titleBar01 span.titleText{ float:left; line-height:26px;}
+
+.titleBara{height:32px; margin-top:10px;}
+.titleBara h3{ float:left;}
+.titleBara span.more{ float:right; padding-right:10px; line-height:32px; font-family:宋体; color:#666}
+
+
+
+.titleBar{  width:100%; height:26px; margin-top:10px;}
+.titleBar h3{ float:left; background-position:left -221px; padding:0 0 0 15px; font-size:13px;font-weight:bold;color:#fff; line-height:26px; height:26px; margin:0;}
+.titleBar span.more{ float:right; padding-right:20px; line-height:26px; font-family:宋体; color:#666}
+.goodTitleBar span.more{ float:right; padding-right:10px; line-height:32px; font-family:宋体; color:#666}
+.titleBar span.more a:visited,.titleBar span.more a:link,.goodTitleBar span.more a:visited,.goodTitleBar span.more a:link,.titleBar01 span.more a:visited,.titleBar01 span.more a:link {
+  color: #0263B0;
+  text-decoration: none;
+}
+.titleBar span.more a:hover,.titleBar span.more a:active {
+  color: #FF3300;
+  text-decoration: underline;
+}
+
+.yTitleBar{ background-position:left -295px; width:100%; height:31px; margin-top:10px;}
+.yTitleBar h3{ float:left; padding:0 0 0 15px; font-size:14px; color:#DD4903; line-height:31px; height:31px; margin:0;}
+.yTitleBar span.more{ float:right; padding-right:10px; line-height:32px;}
+.yTitleBar span.more a:visited,.yTitleBar span.more a:link {
+  color: #FF6600;
+  text-decoration: none;
+}
+.yTitleBar span.more a:hover,.yTitleBar span.more a:active {
+  color: #FF3300;
+  text-decoration: underline;
+}
+
+
+.cpTitleBar{ background-position:left -482px; height:33px; margin-top:10px;}
+.cpTitleBar h3{float:left; padding:3px 0 0 25px; font-size:14px; color:#fff; line-height:30px; height:30px; margin:0;}
+.cpTitleBar span.more{ float:right; padding-right:10px; line-height:32px; color:#999;}
+
+
+.gTitleBar{background:url(../images/pimg.gif) no-repeat right -99px; overflow:hidden; width:100%; height:28px; margin-top:10px;}
+.gTitleBar h3{ float:left; background:url(../images/pimg.gif) no-repeat -200px -99px; white-space:nowrap; padding:0 0 0 22px; font-size:14px; color:#555; line-height:28px; margin:0;}
+.gTitleBar span.more{ float:right; padding-right:10px; line-height:28px;}
+
+
+.tjTitleBar{ background:url(../images/cnimg.gif) no-repeat right -258px; overflow:hidden; width:100%; height:29px;}
+.tjTitleBar h3{ float:left; background:url(../images/cnimg.gif) no-repeat -650px -258px; white-space:nowrap; padding:0 0 0 15px; font-size:14px; color:#fff; line-height:29px; margin:0;}
+.tjTitleBar span.more{ float:right; padding-right:10px; line-height:28px;}
+.tjTitleBar span.more a:visited,.tjTitleBar span.more a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.tjTitleBar span.more a:hover,.tjTitleBar span.more a:active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+
+/*path*/
+.path{ 
+	padding:0 0 0 10px; line-height:20px; height:20px; color:#4E4E4E; font-family:;
+	border-bottom:2px solid #D70909;
+	}
+.path a:visited,.path a:link{text-decoration: underline;}
+
+
+
+
+

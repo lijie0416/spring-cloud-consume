@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章列表</title>
+<link href="resource/css/easycss.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/tree/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="/js/content.js"></script>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="660" height="22" align="left" class="bianxian" style="padding-left:8px;margin:0 "><div id="pageTitle">当前位置：法规库</div></td>
+    <td align="center"><img src="resource/images/index_21.gif" width="109" height="22" alt="点击展开高级查询" onClick="showquery()" id="queryname"></td>
+  </tr>
+</tbody></table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td height="8"></td>
+  </tr>
+</tbody></table>
+<table width="100%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#5A7DBD" id="querydiv" style="display: none;">
+  <tbody><tr>
+    <td bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+        <td width="70" height="33" align="center" bgcolor="#C4DBF1">标　　题</td>
+        <td align="left" bgcolor="#C4DBF1"><input name="articleField01" type="text" class="input1" id="articleField01" value=""></td>
+        <td width="70" align="center" bgcolor="#C4DBF1">字　　号</td>
+        <td width="110" align="left" bgcolor="#C4DBF1"><input type="text" name="articleField03" class="input2" id="articleField03" value=""></td>
+        <td width="70" align="center" bgcolor="#C4DBF1">年　　度</td>
+        <td width="110" align="left" bgcolor="#C4DBF1"><input name="articleField04" type="text" class="input2" id="articleField04" value=""></td>
+        <td width="70" align="center" bgcolor="#C4DBF1">序　　号</td>
+        <td width="110" align="left" bgcolor="#C4DBF1"><input name="articleField05" type="text" class="input2" id="articleField05" value=""></td>
+      </tr>
+      <tr>
+        <td height="33" align="center" bgcolor="#C4DBF1">发文单位</td>
+        <td align="left" bgcolor="#C4DBF1"><input name="articleField06" type="text" class="input1" id="articleField06" value=""></td>
+        <td align="center" bgcolor="#C4DBF1">发文日期</td>
+        <td colspan="3" align="left" bgcolor="#C4DBF1"><input name="articleField07_s" type="text" class="input3" id="articleField07_s" value="" onClick="new Calendar(null, null, 0,null,&#39;yyyy-MM-dd&#39;).show(this);" readonly>
+          至
+          <input name="articleField07_d" type="text" class="input3" id="articleField07_d" value="" onClick="new Calendar(null, null, 0,null,&#39;yyyy-MM-dd&#39;).show(this);" readonly></td>
+       
+         <td colspan="2" align="left" bgcolor="#C4DBF1">&nbsp;&nbsp;&nbsp;
+         <input type="image" name="button" id="button" value="确认" src="resource/images/index_25.gif" width="65" height="21">
+         <input type="image" name="buttonR" id="buttonR" value="确认" src="resource/images/index_25a.gif" width="65" height="21" onClick="doReset()">
+         </td>
+      
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td height="15"></td>
+  </tr>
+</tbody></table>
+<table width="100%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#5A7DBD">
+  <tbody><tr>
+    <td valign="top" bgcolor="#F0F8FE"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#8DBAE4">
+      <tbody><tr>
+        <td height="26"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td width="95" align="right" style="display: none"><label>页面大小
+              <input name="pageSize" type="text" class="input4" id="pageSize" onKeyPress="if(window.event.keyCode&lt;48 || window.event.keyCode&gt;57)event.returnValue = false;" value="15">
+            </label></td>
+            <td width="55" align="right" style="display: none"><label>
+              <input type="image" name="button" id="button" value="确认" src="resource/images/queren.gif">
+            </label></td>
+            <td align="right">共<span id='totleNum_span'></span>条 <span id="totle_span"></span>页    <span id="curPage_span"></span>/<span id="totles_span"></span>   <span id="last_span"> <a href="javascript:goPage(0)" alt="首页" class="xinwen">  首页</a>  <a href="javascript:goLast()"  class="xinwen">上一页</a></span> <span id="next_span"><a href="javascript:goNext()"  class="xinwen">下一页</a>  <a href="javascript:goEnd()" alt="末页" class="xinwen">  末页</a> </span>
+            		 
+					
+					
+					
+					
+              <label>
+                    <input name="cPage" id="cPage" type="text" class="input4" style="width:30px;height:12px; font: 12px/14px &#39;宋体&#39;" >
+                    </label>
+              页</td>
+            <td width="45" align="center"><a href="javascript:searchPage();"><img src="resource/images/fgk_06.gif" width="28" height="17" border="0"></a></td>
+          </tr>
+        </tbody></table></td>
+      </tr>
+    </tbody></table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody></table>
+        <table  width="749" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#A8CDEC">
+        <thead><tr>
+            <td width="519" align="center" background="resource/images/fgk_10.gif" class="font1">标题</td>
+            <td width="130" align="center" background="resource/images/fgk_10.gif" class="font1">来源</td>
+            <td width="90" align="center" background="resource/images/fgk_10.gif" class="font1">形式</td>
+            <td width="130" align="center" background="resource/images/fgk_10.gif" class="font1">目标人群</td>
+            <td width="90" align="center" background="resource/images/fgk_10.gif" class="font1">制作日期</td>
+          </tr></thead>
+          <tbody id="content_table" >
+  
+        </tbody>
+        
+        </table>
+        <table  width="760" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr>
+            <td></td>
+          </tr>
+        </tbody>
+          </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td>&nbsp;</td>
+          </tr>
+      </tbody></table></td>
+  </tr>
+</tbody></table>
+
+
+</body>
+</html>

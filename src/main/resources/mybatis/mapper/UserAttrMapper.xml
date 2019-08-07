@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zh.knowledge.mapper.UserAttrMapper" >
+    <resultMap id="BaseResultMap" type="com.zh.knowledge.pojo.UserAttr" >
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="c_user_id" property="CUserId" jdbcType="VARCHAR" />
+        <result column="user_iphone" property="userIphone" jdbcType="VARCHAR" />
+        <result column="user_mechanism" property="userMechanism" jdbcType="VARCHAR" />
+        <result column="user_province" property="userProvince" jdbcType="VARCHAR" />
+        <result column="user_mailbox" property="userMailbox" jdbcType="VARCHAR" />
+    </resultMap>
+    
+    <sql id="Base_Column_List" >
+        id, c_user_id, user_iphone, user_mechanism, user_province, user_mailbox
+    </sql>
+
+    <select id="getAll" resultMap="BaseResultMap"  >
+       SELECT 
+       <include refid="Base_Column_List" />
+	   FROM c_user_attr
+    </select>
+
+    <select id="getOne" parameterType="java.lang.Long" resultMap="BaseResultMap" >
+        SELECT 
+       <include refid="Base_Column_List" />
+	   FROM c_user_attr
+	   WHERE id = #{id}
+    </select>
+
+    <insert id="insert"  parameterType="com.zh.knowledge.pojo.User" >
+       INSERT INTO 
+       		c_user_attr
+       		(c_user_id,user_iphone,user_mechanism,user_province,user_mailbox) 
+       	VALUES
+       		(#{CUserId}, #{userIphone}, #{userMechanism}, #{userProvince}, #{userMailbox})
+    </insert>
+    
+    <update id="update" parameterType="com.zh.knowledge.pojo.UserAttr" >
+       UPDATE 
+       		users 
+       SET 
+       	<if test="userName != null">userName = #{userName},</if>
+       	<if test="passWord != null">passWord = #{passWord},</if>
+       	nick_name = #{nickName}
+       WHERE 
+       		id = #{id}
+    </update>
+    
+    <delete id="delete" parameterType="java.lang.Long" >
+       DELETE FROM
+       		 users 
+       WHERE 
+       		 id =#{id}
+    </delete>
+
+</mapper>

@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<title>新用户注册--</title>
+<link rel="stylesheet" rev="stylesheet" href="/resource/css/register.css" type="text/css" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script class="resources library" src="/js/area.js" type="text/javascript"></script>
+<script language="javascript">
+$(document).ready(function(){
+	_init_area();//初始化机构所在地
+	
+});
+function checkValue(){
+	   $("form").submit();
+}
+</script>
+</head>
+<body>
+<div id="container">
+<div id="header">
+	<div id="logo"><a href="/"><img src="/upload/paramPic/logourl/1277364661765.jpg" id="logoId" title="" align="absmiddle" border="0" style="padding-top:10px;"/></a>
+	<!-- <img src="/templates/default//images/register-text.gif" align="absmiddle" /> --></div>
+			<br />
+	<!-- 
+	如遇注册问题请咨询  
+	<img src="/images/ico_tel.gif" /> <b class="red">0551-7122345</b>
+	 -->
+	</div>
+</div>
+<div style="clear:both"></div>
+<!--//top-->
+
+
+<div id="main">
+<form method="post" name="NewRegisterForm" id="NewRegisterForm" action="/insert" >
+	<div class="step_top">
+	    <h3>用户注册步骤：</h3><span class="step1">填写注册信息  </span><span class="step02">注册成功  </span><span class="step03">管理员审核</span>
+    </div>
+	<div style=" clear:both"></div>
+	<!--//box_top-->
+
+    <div class="box" style="padding:10px;">
+
+<div class="regTitle"><h3><font>&raquo;</font>输入您的帐户信息</h3></div>
+<br />
+
+<table width="100%">
+<tr>
+<td width="150" class="table_left"><font class="red">*</font>用户名：</td>
+<td width="230"><input name="loginName"  id="login_name" type="text" maxlength="49"  size="20" class="input" /></td>
+<td><span class="text_380" id="ts_loginName">这将用来登录,只能输数字、字母和下划线，长度为6-20</span></td>
+</tr>
+
+<tr>
+<td class="table_left"><font class="red">*</font>密  码：</td>
+<td><input name="loginPassword" id="passwd"  type="password"  size="20" maxlength="19" class="input" /></td>
+<td><span class="text_380" id="ts_passwd">6-20字符（A-Z，a-z,0-9）</span></td>
+</tr>
+
+<tr>
+<td width="150" class="table_left"><font class="red">*</font>机构名称：</td>
+<td width="230"><input name="userMechanism"  id="userMechanism" type="text" maxlength="49"  size="20" class="input" /></td>
+<td><span class="text_380" id="ts_userMechanism"></span></td>
+</tr>
+
+<tr>
+<td width="150" class="table_left"><font class="red">*</font>机构所在地：</td>
+<td width="230">
+	<select id="s_province" name="province"></select>  
+
+    <select id="s_city" name="city" ></select>  
+
+    <select id="s_county" name="county"></select>
+    
+    </td>
+<td><span class="text_380" id="ts_mechanism"></span></td>
+</tr>
+
+<tr>
+<td width="150" class="table_left"><font class="red">*</font>资料库作品上传联系人：</td>
+<td width="230"><input name="userName"  id="user_name" type="text" maxlength="49"  size="20" class="input" /></td>
+<td><span class="text_380" id="ts_username"></span></td>
+</tr>
+
+</table>
+
+
+<div class="regTitle"><h3><font>&raquo;</font>输入您的联系方式</h3></div>
+<br />
+
+<table width="100%">
+<tr>
+<td width="150" class="table_left"><font class="red">*</font>电话：</td>
+<td width="230"><input name="userIphone"  id="userIphone" type="text" maxlength="49"  size="20" class="input" /></td>
+<td><span class="text_380" id="ts_userIphone">这将用来登录,只能输数字、字母和下划线，长度为6-20</span></td>
+</tr>
+
+<tr>
+<td class="table_left"><font class="red">*</font>邮箱：</td>
+<td><input name="userMailbox" id="userMailbox"  type="text"  size="20" maxlength="19" class="input" /></td>
+<td><span class="text_380" id="ts_userMailbox">6-20字符（A-Z，a-z,0-9）</span></td>
+</tr>
+<tr>
+<td></td>
+<td> 
+<input type="checkbox"  checked name="agreement" id="agreement" onclick="checkAgreement()">我已看过并同意</input>
+ <a href="/include/reg_serve.jsp" target="_blank">《用户注册协议》</a>
+ <br />
+ <span id="ts_codeagreement"></span>
+</td>
+<td></td>
+</tr>
+
+	  
+<tr>
+<td></td>
+<td>  
+<input name="submittwo" id="submitInput" onClick="checkValue()" type="button" value="提交注册信息" class="registBtn" />
+<!--  <img src="/templates/default/images/JoinFree_10.jpg"  style="cursor:hand" name="submittwo" id="submitInput" border="0" onClick="checkValue()" />-->
+
+
+</td>
+<td></td>
+</tr>    
+</table>
+
+
+</div>
+<div class="box_bottom"></div>
+</form>
+</div>
+<!--//main_800-->
+<div style="clear:both"></div>
+<div id="showshow">
+</div>
+</div>
+</body>
+</html>
